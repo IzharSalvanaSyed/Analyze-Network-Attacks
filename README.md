@@ -72,3 +72,20 @@ This is the final step required to make a successful TCP connection. ACK stands 
 | 50 | 3.298223 | 198.51.100.23 | 192.0.2.1 | HTTP | GET /sales.html HTTP/1.1 |
 | 51 | 3.349457 | 192.0.2.1 | 198.51.100.23 | HTTP | HTTP/1.1 200 OK (text/html) |
 
+Notice that the handshake process takes a few milliseconds to complete. Then, you can
+identify the employee’s browser requesting the sales.html webpage using the HTTP protocol
+at the application level of the TCP/IP model. Followed by the web server responding to the
+request.
+
+# The Attack
+malicious actors can take advantage of the TCP protocol by
+flooding a server with SYN packet requests for the first part of the handshake. However, if the
+number of SYN requests is greater than the server resources available to handle the
+requests, then the server will become overwhelmed and unable to respond to the requests.
+This is a network level denial of service (DoS) attack, called a SYN flood attack, that targets
+network bandwidth to slow traffic. A SYN flood attack simulates a TCP connection and floods
+the server with SYN packets. A DoS direct attack originates from a single source. A
+distributed denial of service (DDoS) attack comes from multiple sources, often in different
+locations, making it more difficult to identify the attacker or attackers.
+
+
