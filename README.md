@@ -77,7 +77,7 @@ identify the employee’s browser requesting the sales.html webpage using the HT
 at the application level of the TCP/IP model. Followed by the web server responding to the
 request.
 
-# The Attack
+## The Attack
 Malicious actors can take advantage of the TCP protocol by
 flooding a server with SYN packet requests for the first part of the handshake. However, if the
 number of SYN requests is greater than the server resources available to handle the
