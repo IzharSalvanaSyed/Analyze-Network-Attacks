@@ -78,7 +78,7 @@ at the application level of the TCP/IP model. Followed by the web server respond
 request.
 
 # The Attack
-malicious actors can take advantage of the TCP protocol by
+Malicious actors can take advantage of the TCP protocol by
 flooding a server with SYN packet requests for the first part of the handshake. However, if the
 number of SYN requests is greater than the server resources available to handle the
 requests, then the server will become overwhelmed and unable to respond to the requests.
@@ -88,4 +88,16 @@ the server with SYN packets. A DoS direct attack originates from a single source
 distributed denial of service (DDoS) attack comes from multiple sources, often in different
 locations, making it more difficult to identify the attacker or attackers.
 
-
+| Color as text | No. | Time | Source (x = redacted) | Destination (x = redacted) | Protocol | Info |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| red | 52 | 3.390692 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0Win=5792 Len=0... |
+| red | 53 | 3.441926 | 192.0.2.1 | 203.0.113.0 | TCP | 443->54770 [SYN, ACK] Seq=0Win-5792 Len=120... |
+| red | 54 | 3.493160 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [ACK Seq=1Win=5792 Len=0... |
+| green | 55 | 3.544394 | 198.51.100.14 | 192.0.2.1 | TCP | 14785->443 [SYN] Seq=0Win-5792 Len=120... |
+| green | 56 | 3.599628 | 192.0.2.1 | 198.51.100.14 | TCP | 443->14785 [SYN, ACK] Seq=0Win-5792 Len=120... |
+| red | 57 | 3.664863 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0Win=5792 Len=0... |
+| green | 58 | 3.730097 | 198.51.100.14 | 192.0.2.1 | TCP | 14785->443 [ACK] Seq=1Win-5792 Len=120... |
+| red | 59 | 3.795332 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0Win-5792 Len=120... |
+| green | 60 | 3.860567 | 198.51.100.14 | 192.0.2.1 | HTTP | GET /sales.html HTTP/1.1 |
+| red | 61 | 3.939499 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0Win-5792 Len=120... |
+| green | 62 | 4.018431 | 192.0.2.1 | 198.51.100.14 | HTTP | HTTP/1.1 200 OK (text/html) |
