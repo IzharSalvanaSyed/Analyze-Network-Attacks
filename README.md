@@ -54,11 +54,11 @@ Port 443 is normally used for encrypted web traffic.
 The next data element given in the Info column is part of the three-way handshake process to
 establish a connection between two machines. In this case, employees are trying to connect
 to the company’s web server:
-● The [SYN] packet is the initial request from an employee visitor trying to connect to a
+- The [SYN] packet is the initial request from an employee visitor trying to connect to a
 web page hosted on the web server. SYN stands for “synchronize.”
-● The [SYN, ACK] packet is the web server’s response to the visitor’s request agreeing
+- The [SYN, ACK] packet is the web server’s response to the visitor’s request agreeing
 to the connection. The server will reserve system resources for the final step of the
 handshake. SYN, ACK stands for “synchronize acknowledge.”
-● The [ACK] packet is the visitor’s machine acknowledging the permission to connect.
+- The [ACK] packet is the visitor’s machine acknowledging the permission to connect.
 This is the final step required to make a successful TCP connection. ACK stands for
 “acknowledge.”
