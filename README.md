@@ -90,7 +90,7 @@ locations, making it more difficult to identify the attacker or attackers.
 
 | Color as text | No. | Time | Source (x = redacted) | Destination (x = redacted) | Protocol | Info |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| $${\color{red}red }$$ | $${\color{red}52}$$ | 3.390692 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0Win=5792 Len=0... |
+| $$\Menlo - 400\{color{red}red }$$ | $${\color{red}52}$$ | 3.390692 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0Win=5792 Len=0... |
 | $${\color{red}red }$$ | $${\color{red}53}$$ | 3.441926 | 192.0.2.1 | 203.0.113.0 | TCP | 443->54770 [SYN, ACK] Seq=0Win-5792 Len=120... |
 | $${\color{red}red }$$ | $${\color{red}54}$$ | 3.493160 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [ACK Seq=1Win=5792 Len=0... |
 | $${\color{green}Green}$$ | 55 | 3.544394 | 198.51.100.14 | 192.0.2.1 | TCP | 14785->443 [SYN] Seq=0Win-5792 Len=120... |
