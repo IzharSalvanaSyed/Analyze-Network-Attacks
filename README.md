@@ -22,7 +22,7 @@ You take the server offline temporarily so that the machine can recover and retu
 ## How to read Wireshark TCP/HTTP log <a name="how-to">
 
 ### Log entry number and time
-| Mo. | Time |
+| No. | Time |
 | ----- | ----- |
 | 47 | 3.144521 |
 | 48 | 3.195755 |
