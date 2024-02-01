@@ -3,14 +3,13 @@ A scenario involving a customer of the company that you work for who experiences
 
 ## Table of contents
 
-1. [Scenario](#Scenario)
+1. [Scenario](#scenario)
 2. [How to read Wireshark TCP/HTTP log](#how-to)
-3. [Botium's Internal Security Audit](#tables)
-4. [The Attack](#attack)
-5. [Placeholder](#assessment)
-6. [Placeholder](#summary)
+3. [The Attack](#attack)
+4. [Placeholder](#assessment)
+5. [Placeholder](#summary)
 
-## Scenario <a name="Scenario">
+## Scenario <a name="scenario">
 You work as a security analyst for a travel agency that advertises sales and promotions on the company’s website. The employees of the company regularly access the company’s sales webpage to search for vacation packages their customers might like. 
 
 One afternoon, you receive an automated alert from your monitoring system indicating a problem with the web server. You attempt to visit the company’s website, but you receive a connection timeout error message in your browser.
