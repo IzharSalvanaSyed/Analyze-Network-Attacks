@@ -102,7 +102,7 @@ locations, making it more difficult to identify the attacker or attackers.
 | red | 61 | 3.939499 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0Win-5792 Len=120... |
 | green | 62 | 4.018431 | 192.0.2.1 | 198.51.100.14 | HTTP | HTTP/1.1 200 OK (text/html) |
 
-
+diff
 - text in red
 + text in green
 ! text in orange
