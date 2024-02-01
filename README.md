@@ -90,16 +90,16 @@ locations, making it more difficult to identify the attacker or attackers.
 
 | Color as text | No. | Time | Source (x = redacted) | Destination (x = redacted) | Protocol | Info |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| $\color{red}{\textsf{red}}$ | $\color{red}{\textsf{52}}$ | $\color{red}{\textsf{3.390692}}$ | $\color{red}{\textsf{203.0.113.0}}$ | $\color{red}{\textsf{192.0.2.1}}$ | TCP | 54770->443 [SYN] Seq=0Win=5792 Len=0... |
-| $\color{red}{\textsf{red}}$ | $\color{red}{\textsf{53}}$ | $\color{red}{\textsf{3.441926}}$ | $\color{red}{\textsf{192.0.2.1}}$ | $\color{red}{\textsf{203.0.113.0}}$ | TCP | 443->54770 [SYN, ACK] Seq=0Win-5792Len=120... |
-| $\color{red}{\textsf{red}}$ | $\color{red}{\textsf{54}}$ | $\color{red}{\textsf{3.493160}}$ | $\color{red}{\textsf{203.0.113.0}}$ | $\color{red}{\textsf{192.0.2.1}}$ | TCP | 54770->443 [ACK Seq=1Win=5792 Len=0... |
-| $\color{green}{\textsf{green}}$ | $\color{green}{\textsf{55}}$ | $\color{green}{\textsf{3.544394}}$ | $\color{green}{\textsf{198.51.100.14}}$ | $\color{green}{\textsf{192.0.2.1}}$ | TCP | 14785->443 [SYN] Seq=0Win-5792 Len=120... |
-| $\color{green}{\textsf{green}}$ | $\color{green}{\textsf{56}}$ | $\color{green}{\textsf{3.599628}}$ | $\color{green}{\textsf{192.0.2.1}}$ | $\color{green}{\textsf{198.51.100.14}}$ | TCP | 443->14785 [SYN, ACK] Seq=0Win-5792 Len=120... |
-| $\color{red}{\textsf{red}}$ | $\color{red}{\textsf{57}}$ | $\color{red}{\textsf{3.664863}}$ | $\color{red}{\textsf{203.0.113.0}}$ | $\color{red}{\textsf{192.0.2.1}}$ | TCP | 54770->443 [SYN] Seq=0Win=5792 Len=0... |
-| $\color{green}{\textsf{green}}$ | $\color{green}{\textsf{58}}$ | $\color{green}{\textsf{3.730097}}$ |  $\color{green}{\textsf{198.51.100.14}}$ | $\color{green}{\textsf{192.0.2.1}}$ | TCP | 14785->443 [ACK] Seq=1Win-5792 Len=120... |
-| $\color{red}{\textsf{red}}$ | $\color{red}{\textsf{59}}$ | $\color{red}{\textsf{3.795332}}$ | $\color{red}{\textsf{203.0.113.0}}$ | $\color{red}{\textsf{192.0.2.1}}$ | TCP | 54770->443 [SYN] Seq=0Win-5792 Len=120... |
-| $\color{green}{\textsf{green}}$ | $\color{green}{\textsf{60}}$ | $\color{green}{\textsf{3.860567}}$ | $\color{green}{\textsf{198.51.100.14}}$ | $\color{green}{\textsf{192.0.2.1}}$ | HTTP | GET /sales.html HTTP/1.1 |
-| $\color{red}{\textsf{red}}$ | $\color{red}{\textsf{60}}$ | $\color{red}{\textsf{3.939499}}$ | $\color{red}{\textsf{203.0.113.0}}$ | $\color{red}{\textsf{192.0.2.1}}$ | TCP | 54770->443 [SYN] Seq=0Win-5792 Len=120... |
-| $\color{green}{\textsf{green}}$ | $\color{green}{\textsf{62}}$ | $\color{green}{\textsf{4.018431}}$ | $\color{green}{\textsf{192.0.2.1}}$ | $\color{green}{\textsf{198.51.100.14}}$ | HTTP | HTTP/1.1 200 OK (text/html) |
+| $\color{red}{\textsf{red}}$ | $\color{red}{\textsf{52}}$ | $\color{red}{\textsf{3.390692}}$ | $\color{red}{\textsf{203.0.113.0}}$ | $\color{red}{\textsf{192.0.2.1}}$ | $\color{red}{\textsf{TCP}}$ | 54770->443 [SYN] Seq=0Win=5792 Len=0... |
+| $\color{red}{\textsf{red}}$ | $\color{red}{\textsf{53}}$ | $\color{red}{\textsf{3.441926}}$ | $\color{red}{\textsf{192.0.2.1}}$ | $\color{red}{\textsf{203.0.113.0}}$ | $\color{red}{\textsf{TCP}}$ | 443->54770 [SYN, ACK] Seq=0Win-5792Len=120... |
+| $\color{red}{\textsf{red}}$ | $\color{red}{\textsf{54}}$ | $\color{red}{\textsf{3.493160}}$ | $\color{red}{\textsf{203.0.113.0}}$ | $\color{red}{\textsf{192.0.2.1}}$ | $\color{red}{\textsf{TCP}}$ | 54770->443 [ACK Seq=1Win=5792 Len=0... |
+| $\color{green}{\textsf{green}}$ | $\color{green}{\textsf{55}}$ | $\color{green}{\textsf{3.544394}}$ | $\color{green}{\textsf{198.51.100.14}}$ | $\color{green}{\textsf{192.0.2.1}}$ | $\color{green}{\textsf{TCP}}$ | 14785->443 [SYN] Seq=0Win-5792 Len=120... |
+| $\color{green}{\textsf{green}}$ | $\color{green}{\textsf{56}}$ | $\color{green}{\textsf{3.599628}}$ | $\color{green}{\textsf{192.0.2.1}}$ | $\color{green}{\textsf{198.51.100.14}}$ | $\color{green}{\textsf{TCP}}$ | 443->14785 [SYN, ACK] Seq=0Win-5792 Len=120... |
+| $\color{red}{\textsf{red}}$ | $\color{red}{\textsf{57}}$ | $\color{red}{\textsf{3.664863}}$ | $\color{red}{\textsf{203.0.113.0}}$ | $\color{red}{\textsf{192.0.2.1}}$ | $\color{red}{\textsf{TCP}}$ | 54770->443 [SYN] Seq=0Win=5792 Len=0... |
+| $\color{green}{\textsf{green}}$ | $\color{green}{\textsf{58}}$ | $\color{green}{\textsf{3.730097}}$ |  $\color{green}{\textsf{198.51.100.14}}$ | $\color{green}{\textsf{192.0.2.1}}$ | $\color{green}{\textsf{TCP}}$ | 14785->443 [ACK] Seq=1Win-5792 Len=120... |
+| $\color{red}{\textsf{red}}$ | $\color{red}{\textsf{59}}$ | $\color{red}{\textsf{3.795332}}$ | $\color{red}{\textsf{203.0.113.0}}$ | $\color{red}{\textsf{192.0.2.1}}$ | $\color{red}{\textsf{TCP}}$ | 54770->443 [SYN] Seq=0Win-5792 Len=120... |
+| $\color{green}{\textsf{green}}$ | $\color{green}{\textsf{60}}$ | $\color{green}{\textsf{3.860567}}$ | $\color{green}{\textsf{198.51.100.14}}$ | $\color{green}{\textsf{192.0.2.1}}$ | $\color{green}{\textsf{HTTP}}$ | GET /sales.html HTTP/1.1 |
+| $\color{red}{\textsf{red}}$ | $\color{red}{\textsf{60}}$ | $\color{red}{\textsf{3.939499}}$ | $\color{red}{\textsf{203.0.113.0}}$ | $\color{red}{\textsf{192.0.2.1}}$ | $\color{red}{\textsf{TCP}}$ | 54770->443 [SYN] Seq=0Win-5792 Len=120... |
+| $\color{green}{\textsf{green}}$ | $\color{green}{\textsf{62}}$ | $\color{green}{\textsf{4.018431}}$ | $\color{green}{\textsf{192.0.2.1}}$ | $\color{green}{\textsf{198.51.100.14}}$ | $\color{green}{\textsf{HTTP}}$ | HTTP/1.1 200 OK (text/html) |
 
 
