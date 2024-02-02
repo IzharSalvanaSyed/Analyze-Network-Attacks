@@ -114,7 +114,7 @@ Initially, the attacker’s SYN request is answered normally by the web server (
 
 | Color as text | No. | Time | Source | Destination | Protocol | Info |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-$\color{green}{\textsf{| green \space | \space 63 \space | \space 4.097363 \space | \space 198.51.100.5 \space | \space 192.0.2.1 \space | \space TCP \space | \space 33638->443 \space [SYN] \space Seq=0 \space Win-5792 \space Len=120... \space |}}$
+| $\color{green}{\textsf{green}}$ | $\color{green}{\textsf{63}}$ | $\color{green}{\textsf{4.097363}}$ | $\color{green}{\textsf{198.51.100.5}}$ | $\color{green}{\textsf{192.0.2.1}}$ | $\color{green}{\textsf{TCP}}$ | $\color{green}{\textsf{33638->443 [SYN] Seq=0 Win-5792 Len=120...}}$ |
 | $\color{red}{\textsf{red}}$ | 64 | 4.176295 | 192.0.2.1 | 203.0.113.0 | TCP | 443->54770 [SYN, ACK] Seq=0 Win-5792 Len=120... |
 | $\color{green}{\textsf{green}}$ | 65 | 4.255227 | 192.0.2.1 | 198.51.100.5 | TCP | 443->54770 [SYN, ACK] Seq=0 Win-5792 Len=120... |
 | $\color{green}{\textsf{green}}$ | 65 | 4.255227 | 192.0.2.1 | 198.51.100.5 | TCP | 443->33638 [SYN, ACK] Seq=0 Win-5792 Len=120... |
