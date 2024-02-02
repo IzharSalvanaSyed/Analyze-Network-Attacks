@@ -169,7 +169,6 @@ The two types of errors in the logs include:
 | $\color{red}{\textsf{red}}$ | 137 | 4.256159 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{red}{\textsf{red}}$ | 138 | 7.340778 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{red}{\textsf{red}}$ | 139 | 7.340783 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
-| $\color{red}{\textsf{red}}$ | 140 | 7.439658 | 192.0.2.1 | 203.0.113.0 | TCP | 443->54770 [RST, ACK] Seq=1 Win=5792 Len=0... |
 
 ## Report <a name="report">
 
