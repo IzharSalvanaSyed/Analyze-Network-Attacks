@@ -120,21 +120,21 @@ Initially, the attacker’s SYN request is answered normally by the web server (
 | $\color{red}{\textsf{red}}$ | $\color{red}{\textsf{64}}$ | $\color{red}{\textsf{4.176295}}$ | $\color{red}{\textsf{192.0.2.1}}$ | $\color{red}{\textsf{203.0.113.0}}$ | $\color{red}{\textsf{TCP}}$ | $\color{red}{\textsf{443->54770 [SYN, ACK] Seq=0Win-5792Len=120...}}$ |
 | $\color{green}{\textsf{green}}$ | 65 | 4.255227 | 192.0.2.1 | 198.51.100.5 | TCP | 443->54770 [SYN, ACK] Seq=0 Win-5792 Len=120... |
 | $\color{green}{\textsf{green}}$ | 65 | 4.255227 | 192.0.2.1 | 198.51.100.5 | TCP | 443->33638 [SYN, ACK] Seq=0 Win-5792 Len=120... |
-| $\color{red}{\textsf{192.0.2.1}}$ | 66 | 4.256159 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
+| $\color{red}{\textsf{red}}$ | 66 | 4.256159 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{green}{\textsf{green}}$ | 67 | 5.235091 | 198.51.100.5 | 192.0.2.1 | TCP | 33638->443 [ACK] Seq=1 Win-5792 Len=120... |
 | $\color{red}{\textsf{red}}$ | 68 | 5.236023 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{green}{\textsf{green}}$ | 69 | 5.236955 | 198.51.100.16 | 192.0.2.1 | TCP | 32641->443 [SYN] Seq=0 Win-5792 Len=120... |
 | $\color{red}{\textsf{red}}$ | 70 | 5.237887 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{green}{\textsf{green}}$ | 71 | 6.228728 | 198.51.100.5 | 192.0.2.1 | HTTP | GET /sales.html HTTP/1.1 |
 | $\color{red}{\textsf{red}}$ | 72 | 6.229638 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
-| $\color{yellow}{\textsf{Yellow}}$ | 73 | 6.230548 | 192.0.2.1 | 198.51.100.16 | TCP | 443->32641 [RST, ACK] Seq=0 Win-5792 Len=120... |
+| $\color{yellow}{\textsf{yellow}}$ | 73 | 6.230548 | 192.0.2.1 | 198.51.100.16 | TCP | 443->32641 [RST, ACK] Seq=0 Win-5792 Len=120... |
 | $\color{red}{\textsf{red}}$ | 74 | 6.330539 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{green}{\textsf{green}}$ | 75 | 6.330885 | 198.51.100.7 | 192.0.2.1 | TCP | 42584->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{red}{\textsf{red}}$ | 76 | 6.331231 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
-| $\color{yelloq}{\textsf{Yellow}}$ | 77 | 7.330577 | 192.0.2.1 | 198.51.100.5 | TCP | HTTP/1.1 504 Gateway Time-out (text/html) |
+| $\color{yelloq}{\textsf{yellow}}$ | 77 | 7.330577 | 192.0.2.1 | 198.51.100.5 | TCP | HTTP/1.1 504 Gateway Time-out (text/html) |
 | $\color{red}{\textsf{red}}$ | 78 | 7.331323 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{green}{\textsf{green}}$ | 79 | 7.340768 | 198.51.100.22 | 192.0.2.1 | TCP | 6345->443 [SYN] Seq=0 Win=5792 Len=0... |
-| $\color{yellow}{\textsf{Yellow}}$ | 80 | 7.340773 | 192.0.2.1 | 198.51.100.7 | TCP | 443->42584 [RST, ACK] Seq=1 Win-5792 Len=120... |
+| $\color{yellow}{\textsf{yellow}}$ | 80 | 7.340773 | 192.0.2.1 | 198.51.100.7 | TCP | 443->42584 [RST, ACK] Seq=1 Win-5792 Len=120... |
 | $\color{red}{\textsf{red}}$ | 81 | 7.340778 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{red}{\textsf{red}}$ | 82 | 7.340783 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{red}{\textsf{red}}$ | 83 | 7.439658 | 192.0.2.1 | 203.0.113.0 | TCP | 443->54770 [RST, ACK] Seq=1 Win=5792 Len=0... |
@@ -150,7 +150,7 @@ The two types of errors in the logs include:
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | $\color{red}{\textsf{red}}$ | 119 | 4.256159 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{red}{\textsf{red}}$ | 120 | 4.256159 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
-| $\color{yellow}{\textsf{Yellow}}$ | 121 | 19.844731 | 192.0.2.1 | 198.51.100.5 | TCP | 443->4631 [RST, ACK] Seq=0 Win-5792 Len=120... |
+| $\color{yellow}{\textsf{yellow}}$ | 121 | 19.844731 | 192.0.2.1 | 198.51.100.5 | TCP | 443->4631 [RST, ACK] Seq=0 Win-5792 Len=120... |
 | $\color{red}{\textsf{red}}$ | 122 | 4.256159 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{red}{\textsf{red}}$| 123 | 4.256159 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{red}{\textsf{red}}$ | 124 | 4.256159 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
