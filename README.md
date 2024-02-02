@@ -184,8 +184,7 @@ When an attacker sends multiple SYN requests to the server, the server is given 
 
 ## Suggested Preventions <a name="suggest">
 
-
-
+SYN flood attacks are a form of DOS attack that attempts to flood a system with requests to take up resources from a server, overwhelming it and causing it to not function. Some forms of prevention, to name a few, are installing an intrusion protection system (IPS), configuring your firewall and proxies, and reducing SYN-RECEIVED timers and load balancers.
 
 
 
