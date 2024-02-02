@@ -7,7 +7,7 @@ A scenario involving a customer of the company that you work for who experiences
 2. [How to read Wireshark TCP/HTTP log](#how-to)
 3. [The Attack](#attack)
 4. [Report](#report)
-5. [Placeholder](#summary)
+5. [Suggest Preventions](#suggest)
 
 ## Scenario <a name="scenario">
 You work as a security analyst for a travel agency that advertises sales and promotions on the company’s website. The employees of the company regularly access the company’s sales webpage to search for vacation packages their customers might like. 
@@ -179,7 +179,10 @@ One potential explanation for the website's connection timeout error message is 
 2. Server, 192.0.2.1, acknowledges (ACK) the Employee request from Employee IP, 198.51.100.14, and sees that the Employee IP is requesting to view sales.html through the HTTP protocol
 3. Server 192.0.2.1 sends sales.html to Employee IP through HTTP
 
-When an attacker sends multiple SYN requests to the server, the server is given no time to start the ACK process, causing the server to be overwhelmed with all the SYN packets. The server cannot process any other requests and times out for all other users trying to access the server. The logs show that a flood of SYN requests are being sent while legitimate Employees are also trying to access the server. Due to the flood of SYN packers, the server is sending back HTTP gateway time-out errors to legitimate Employees making them unable to access 
+When an attacker sends multiple SYN requests to the server, the server is given no time to start the ACK process, causing the server to be overwhelmed with all the SYN packets. The server cannot process any other requests and times out for all other users trying to access the server. The logs show that a flood of SYN requests are being sent while legitimate Employees are also trying to access the server. Due to the flood of SYN packers, the server is sending back HTTP gateway time-out errors to legitimate Employees, making them unable to access the server while the attacker sends SYN packets from a spoofed IP.
+
+
+## Suggested Preventions <a name="suggest">
 
 
 
