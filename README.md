@@ -6,7 +6,7 @@ A scenario involving a customer of the company that you work for who experiences
 1. [Scenario](#scenario)
 2. [How to read Wireshark TCP/HTTP log](#how-to)
 3. [The Attack](#attack)
-4. [Placeholder](#assessment)
+4. [Report](#report)
 5. [Placeholder](#summary)
 
 ## Scenario <a name="scenario">
@@ -131,7 +131,7 @@ Initially, the attacker’s SYN request is answered normally by the web server (
 | $\color{red}{\textsf{red}}$ | 74 | 6.330539 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{green}{\textsf{green}}$ | 75 | 6.330885 | 198.51.100.7 | 192.0.2.1 | TCP | 42584->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{red}{\textsf{red}}$ | 76 | 6.331231 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
-| $\color{yelloq}{\textsf{yellow}}$ | 77 | 7.330577 | 192.0.2.1 | 198.51.100.5 | TCP | HTTP/1.1 504 Gateway Time-out (text/html) |
+| $\color{yellow}{\textsf{yellow}}$ | 77 | 7.330577 | 192.0.2.1 | 198.51.100.5 | TCP | HTTP/1.1 504 Gateway Time-out (text/html) |
 | $\color{red}{\textsf{red}}$ | 78 | 7.331323 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{green}{\textsf{green}}$ | 79 | 7.340768 | 198.51.100.22 | 192.0.2.1 | TCP | 6345->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{yellow}{\textsf{yellow}}$ | 80 | 7.340773 | 192.0.2.1 | 198.51.100.7 | TCP | 443->42584 [RST, ACK] Seq=1 Win-5792 Len=120... |
@@ -170,6 +170,20 @@ The two types of errors in the logs include:
 | $\color{red}{\textsf{red}}$ | 138 | 7.340778 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{red}{\textsf{red}}$ | 139 | 7.340783 | 203.0.113.0 | 192.0.2.1 | TCP | 54770->443 [SYN] Seq=0 Win=5792 Len=0... |
 | $\color{red}{\textsf{red}}$ | 140 | 7.439658 | 192.0.2.1 | 203.0.113.0 | TCP | 443->54770 [RST, ACK] Seq=1 Win=5792 Len=0... |
+
+## Report <a name="report">
+
+One potential explanation for the website's connection timeout error message is due to a SYN flood attack. The logs show that an IP address 203.0.113.0 sends multiple SYN requests to the server 192.0.2.1 and overwhelms the server with SYN requests. A normal three-way handshake as can be seen above with:
+
+1. Employee IP, 198.51.100.14, requesting access to the server a SYN (synchronize) request to 192.0.2.1 through port 443
+2. Server, 192.0.2.1, acknowledges (ACK) the Employee request from Employee IP, 198.51.100.14, and sees that the Employee IP is requesting to view sales.html through the HTTP protocol
+3. Server 192.0.2.1 sends sales.html to Employee IP through HTTP
+
+When an attacker sends multiple SYN requests to the server, the server is given no time to start the ACK process, causing the server to be overwhelmed with all the SYN packets. The server cannot process any other requests and times out for all other users trying to access the server. The logs show that a flood of SYN requests are being sent while legitimate Employees are also trying to access the server. Due to the flood of SYN packers, the server is sending back HTTP gateway time-out errors to legitimate Employees making them unable to access 
+
+
+
+
 
 
 
